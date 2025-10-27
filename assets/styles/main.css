@@ -1299,10 +1299,6 @@ p{
     height:100%;
     color:#050505;
 }
-.c-promo_section.-white .c-promo_link:focus,.c-promo_section.-white .c-promo_link:hover{
-    color:#050505;
-    background-color:#e6e5e5
-}
 .c-promo_link.-site{
     display:block;
     height:8.5714285714rem;
