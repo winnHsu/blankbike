@@ -890,19 +890,19 @@ p{
     overflow:hidden
 }
 .o-checkbox-label,.o-label,.o-radio-label{
-    font-size:.7857142857rem;
+    font-size:.85rem;
     letter-spacing:.06em;
     line-height:1.3;
     margin:0
 }
 @media (max-width:1199px){
     .o-checkbox-label,.o-label,.o-radio-label{
-        font-size:.6428571429rem
+        font-size:.75rem
     }
 }
 @media (max-width:699px){
     .o-checkbox-label,.o-label,.o-radio-label{
-        font-size:1rem
+        font-size:1.15rem
     }
 }
 .o-checkbox-label svg,.o-label svg,.o-radio-label svg{
@@ -1519,7 +1519,7 @@ p{
 }
 .c-header_text{
     position:relative;
-    font-size:.7857142857rem;
+    font-size: 1.1rem;
     letter-spacing:.06em;
     line-height:1.3;
     position:relative;
@@ -1535,12 +1535,12 @@ p{
 }
 @media (max-width:1199px){
     .c-header_text{
-        font-size:.6428571429rem
+        font-size:.9rem
     }
 }
 @media (max-width:699px){
     .c-header_text{
-        font-size:1rem
+        font-size:1.3rem
     }
 }
 .dom-is-loading.-details .c-header_text{
@@ -1571,7 +1571,7 @@ p{
 }
 @media (max-width:699px){
     .c-header_text{
-        font-size:.6428571429rem
+        font-size:.9rem
     }
 }
 .c-header_logo-mark{
@@ -6130,22 +6130,22 @@ p{
 }
 @media (max-width:699px){
     .c-film_header{
-        margin-bottom:6.4285714286rem
+        margin-bottom:3.2142857143rem
     }
 }
 @media (min-width:700px) and (max-width:1199px){
     .c-film_header{
-        margin-bottom:12.8571428571rem
+        margin-bottom:6.42857143rem
     }
 }
 @media (min-width:1200px) and (max-width:1599px){
     .c-film_header{
-        margin-bottom:19.2857142857rem
+        margin-bottom:9.642857143rem
     }
 }
 @media (min-width:1600px){
     .c-film_header{
-        margin-bottom:30rem
+        margin-bottom: 15rem
     }
 }
 .c-film_header_main{
@@ -6164,28 +6164,28 @@ p{
 }
 @media (min-width:1800px){
     .c-film_header_title{
-        font-size:12.8571428571rem;
+        font-size:12rem;
         padding-bottom:4.2857142857rem;
         margin-bottom:-8.5714285714rem
     }
 }
 @media (min-width:1600px) and (max-width:1800px){
     .c-film_header_title{
-        font-size:12.1428571429rem;
+        font-size:11rem;
         padding-bottom:4.2857142857rem;
         margin-bottom:-8.5714285714rem
     }
 }
 @media (min-width:1400px) and (max-width:1599px){
     .c-film_header_title{
-        font-size:11.4285714286rem;
+        font-size:10.5rem;
         padding-bottom:2.1428571429rem;
         margin-bottom:-4.2857142857rem
     }
 }
 @media (min-width:1200px) and (max-width:1399px){
     .c-film_header_title{
-        font-size:8.5714285714rem;
+        font-size:8.5rem;
         padding-bottom:4.2857142857rem
     }
 }
@@ -6504,27 +6504,27 @@ p{
 }
 @media (min-width:1600px){
     .c-press-clipping{
-        font-size:7.8571428571rem
+        font-size: 6rem
     }
 }
 @media (min-width:1399px) and (max-width:1599px){
     .c-press-clipping{
-        font-size:6.4285714286rem
+        font-size: 4rem
     }
 }
 @media (min-width:1199px) and (max-width:1399px){
     .c-press-clipping{
-        font-size:5rem
+        font-size: 3.5rem
     }
 }
 @media (min-width:699px) and (max-width:1199px){
     .c-press-clipping{
-        font-size:4.2857142857rem
+        font-size: 3rem
     }
 }
 @media (max-width:699px){
     .c-press-clipping{
-        font-size:2.5rem
+        font-size: 1.5rem
     }
 }
 .c-press-clipping_author{
@@ -8489,18 +8489,18 @@ p{
     }
 }
 .u-text{
-    font-size:.7857142857rem;
+    font-size:.85rem;
     letter-spacing:.06em;
     line-height:1.3
 }
 @media (max-width:1199px){
     .u-text{
-        font-size:.6428571429rem
+        font-size:.75rem
     }
 }
 @media (max-width:699px){
     .u-text{
-        font-size:1rem
+        font-size:1.15rem
     }
 }
 .u-mask{
