@@ -6317,6 +6317,13 @@ p{
     display:block;
     margin:auto
 }
+    .previewImgs {
+        text-align: center;
+    }
+
+.previewImgs img {
+    width: 33%;
+}
 @media (min-width:1400px){
     .c-film_filmmakers{
         margin:8.5714285714rem 0
@@ -6330,6 +6337,9 @@ p{
 @media (max-width:1199px){
     .c-film_filmmakers{
         margin:4.2857142857rem 0
+    }
+    .previewImgs img {
+        width: 100%;
     }
 }
 .c-film_filmmakers_item{
