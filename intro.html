@@ -244,6 +244,31 @@
             })(window, document);
         </script>
         <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let clickCount = 0;
+            let timer = null;
+
+            const trigger = document.querySelector(".triggerRow");
+            const hides = document.querySelectorAll(".hideRow");
+
+            // Start with hideRow invisible
+            hides.forEach(r => r.style.display = "none");
+
+            trigger.addEventListener("click", function () {
+                clickCount++;
+
+                // Reset if too slow (300ms between clicks)
+                if (timer) clearTimeout(timer);
+                timer = setTimeout(() => { clickCount = 0; }, 300);
+
+                if (clickCount === 3) {
+                    hides.forEach(r => r.style.display = "");
+                    clickCount = 0; // reset
+                }
+            });
+        });
+        </script>
+        <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const classGroups = [
                     '.projetcs-image-slides',
@@ -853,7 +878,7 @@
                                             <td>NYC</td>
                                             <td style="width: 20%;">Citi Group</td>
                                             <td>16,000</td>
-                                            <td>$111.5M</td>
+                                            <td>$111.5m</td>
                                             <td>11 years</td>
                                             <td style="font-weight: 500;">$1.74</td>
                                         </tr>
@@ -861,7 +886,7 @@
                                             <td>Santa Monica</td>
                                             <td style="width: 20%;">Hulu LLC</td>
                                             <td>650</td>
-                                            <td>$3.38M</td>
+                                            <td>$3.38m</td>
                                             <td>5 years</td>
                                             <td style="font-weight: 500;">$2.85</td>
                                         </tr>
@@ -869,17 +894,33 @@
                                             <td>Chicago</td>
                                             <td style="width: 20%;">BCBS of Illinois</td>
                                             <td>3,300</td>
-                                            <td>$12.5M</td>
+                                            <td>$12.5m</td>
                                             <td>5 years</td>
                                             <td style="font-weight: 500;">$2.08</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="triggerRow">
                                             <td style="font-weight: 500;">NYC</td>
                                             <td style="font-weight: 500; width: 20%;">The ____Bike</td>
                                             <td style="font-weight: 500;">6,000</td>
                                             <td style="font-weight: 500;">--</td>
-                                            <td style="font-weight: 500;">3+ years</td>
+                                            <td style="font-weight: 500;">1+ years</td>
                                             <td style="font-weight: 500;">--</td>
+                                        </tr>
+                                        <tr class="hideRow">
+                                            <td style="font-weight: 500;">NYC</td>
+                                            <td style="font-weight: 500; width: 20%;">The ____Bike</td>
+                                            <td style="font-weight: 500;">3,000</td>
+                                            <td style="font-weight: 500;">$1.8m</td>
+                                            <td style="font-weight: 500;">1+ year</td>
+                                            <td style="font-weight: 500;">$1.64</td>
+                                        </tr>
+                                        <tr class="hideRow">
+                                            <td style="font-weight: 500;">NYC</td>
+                                            <td style="font-weight: 500; width: 20%;">The ____Bike</td>
+                                            <td style="font-weight: 500;">6,000</td>
+                                            <td style="font-weight: 500;">$3m</td>
+                                            <td style="font-weight: 500;">1+ year</td>
+                                            <td style="font-weight: 500;">$1.37</td>
                                         </tr>
                                     </tbody>
                                 </table>
